@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pagination {
+            display: inline-block;
+            margin: 20px 50px;
+        }
+
+        .pagination a {
+            color: red;
+            border: 1px solid blue;
+            float: left;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        .pagination a.active {
+            background-color: rgb(3, 177, 177);
+            color: brown;
+            border: 1px solid rgb(3, 177, 177);
+        }
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        .pagination a:first-child {
+     border-top-left-radius: 7px;
+     border-bottom-left-radius: 7px;
+        }
+
+        .pagination a:last-child {
+     border-top-right-radius: 7px;
+     border-bottom-right-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="/pag.html/page1.html">1</a>
+        <a href="/pag.html/page2.html">2</a>
+        <a href="/pag.html/page3.html">3</a>
+        <a class="active" href="/pag.html/page4.html">4</a>
+        <a href="/pag.html/page5.html">5</a>
+        <a href="/pag.html/page6.html">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+</body>
+</html>
